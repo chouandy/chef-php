@@ -1,4 +1,4 @@
-chef-ubuntu_14.04
+chef-php (ubuntu_14.04)
 =================
 
 # Use gems
