@@ -1,0 +1,5 @@
+include_recipe 'cook_php::setup'
+# include_recipe 'cook_php::php'
+include_recipe 'cook_php::mysql'
+# include_recipe 'cook_php::nginx'
+include_recipe 'cook_php::apache2'
