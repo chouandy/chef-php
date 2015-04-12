@@ -1,3 +1,8 @@
 /cookbooks/
 /.vagrant
 Gemfile.lock
+/www
+!/www/log
+!/www/theme
+!/www/.htaccess
+!/www/index.html
