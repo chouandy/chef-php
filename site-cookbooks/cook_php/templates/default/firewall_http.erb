@@ -1,0 +1,4 @@
+# Port 80 for http
+-A FWR -p tcp -m tcp --dport 80 -j ACCEPT
+# Port 3306 for mysql
+-A INPUT -i eth0 -p tcp -m tcp --dport 3306 -j ACCEPT

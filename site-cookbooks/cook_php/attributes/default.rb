@@ -18,36 +18,21 @@
 #
 
 # server config settings for vagrant
-default[:server][:user]     = 'vagrant'
-default[:server][:group]    = 'vagrant'
-default[:server][:app_name] = 'vagrant'
+default[:server][:user]     = 'webapp'
+default[:server][:group]    = 'webapp'
+default[:server][:app_name] = 'webapp'
 default[:server][:app_path] = '/vagrant/www'
 
-# php config settings
-default['php-fpm']['user']      = node[:server][:user]
-default['php-fpm']['group']     = node[:server][:group]
-default['php-fpm']['error_log'] =  "#{node[:server][:app_path]}/log/php5-fpm.log"
-
-# mysql config settings
-default[:mysql][:version]   = '5.5'
-default[:mysql][:root_pass] = 'pass'
-default[:mysql][:host]      = 'localhost'
-default[:mysql][:port]      = '3306'
-default[:mysql][:socket]    = '/tmp/mysql.sock'
-default[:mysql][:username]  = 'vagrant'
-default[:mysql][:password]  = 'vagrant'
-
-# nginx config settings for vagrant
-default[:nginx][:default_site_enabled]       = false
-default[:cook_php][:nginx][:config_name]     = node[:server][:app_name]
-default[:cook_php][:nginx][:server_name]     = node[:server][:name]
-default[:cook_php][:nginx][:root]            = node[:server][:app_path]
-default[:cook_php][:nginx][:access_log_file] = "#{node[:server][:app_path]}/log/nginx.access.log"
-default[:cook_php][:nginx][:error_log_file]  = "#{node[:server][:app_path]}/log/nginx.error.log"
-
-# nginx config setting
+# apache config setting
 default['apache']['log_dir']              = "#{node[:server][:app_path]}/log"
 default['apache']['user']                 = node[:server][:user]
 default['apache']['group']                = node[:server][:group]
-default['apache']['contact']              = "chouandy625@gmail.com"
+default['apache']['contact']              = 'chouandy625@gmail.com'
 default['apache']['default_site_enabled'] = false
+default['iptables']['install_rules']      = false
+
+# mysql config settings
+default[:mysql][:root_pass] = 'webapp'
+default[:mysql][:host]      = '127.0.0.1'
+default[:mysql][:username]  = 'webapp'
+default[:mysql][:password]  = 'webapp'
