@@ -2,7 +2,6 @@
 include_recipe 'apache2::default'
 
 web_app 'apache2' do
-  server_port '80'
   template 'apache2.conf.erb'
   server_name node[:server][:name]
   docroot node[:server][:app_path]
@@ -11,11 +10,12 @@ web_app 'apache2' do
 end
 
 # Open port 80 to incoming traffic.
-include_recipe 'iptables'
-iptables_rule 'firewall_http'
+include_recipe 'apache2::iptables'
 
 # Install the mod_php5 Apache module.
 include_recipe 'apache2::mod_php5'
+include_recipe 'apache2::mod_rewrite'
+include_recipe 'apache2::mod_xsendfile'
 
 # Install php-mysql.
 package 'php5-mysql' do

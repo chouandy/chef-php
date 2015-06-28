@@ -1,8 +1,8 @@
-cook_rails CHANGELOG
-====================
+cook_php CHANGELOG
+==================
 
-This file is used to list changes made in each version of the cook_rails cookbook.
+This file is used to list changes made in each version of the cook_php cookbook.
 
-1.0.0
+0.1.0
 -----
-- [ChouAndy] - Initial release of cook_rails
+- [ChouAndy] - Initial release of cook_php
