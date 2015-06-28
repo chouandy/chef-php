@@ -1,0 +1,146 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+	margin:0;
+	padding:0;
+	-webkit-box-sizing:border-box;
+	   -moz-box-sizing:border-box;
+	        box-sizing:border-box; 
+}
+
+html {
+	min-height:100%;
+	color:#61666c;
+	font-weight:400;
+	font-size:1em;
+	font-family:'Open Sans', sans-serif;
+	line-height:2em;
+	background-color:#DDF1FC;
+}
+
+h1 {
+	height:10px;
+}
+
+#main {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+	background-color: white;
+	padding: 1.5em;
+	border-radius: 15px;
+}
+
+#footer {
+	padding-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	text-align: center;
+	font-size: 15px;
+	color:#000000;
+}
+#footer a {
+	color: #FF00FF;
+}
+#footer a:hover {
+	color: red;
+}
+span {
+	font-size:15px;
+	font-weight:bold;
+	padding-left: 5px;
+}
+
+body {
+	padding:20px;
+	-webkit-backface-visibility:hidden;
+}
+code {
+	font-family:consolas,monospace;	
+}
+a {
+	color:#61666c;
+	text-decoration:none;
+}
+a:hover {
+	color:#2a2a2a;
+}
+
+.wrapper {
+	margin:0 auto;
+	padding-top:20px;
+	max-width:500px;
+}
+
+.block {
+	font-size:.875em;
+	margin:20px 0;
+	padding:20px;
+	color:#9099A3;
+}
+
+table {
+	width:100%;
+	border-collapse:collapse;
+	font-size:.875em;
+}
+tr {
+	outline:0;
+	border:0;
+}
+tr:hover td {
+	background:#f6f6f6;
+}
+th {
+	text-align:left;
+	font-size:.75em;
+	padding-right:20px;
+}
+
+th + th {
+	width:65%;
+}
+
+th + th + th {
+}
+
+th + th + th + th {
+	width:5%;
+}
+tr td:first-of-type {
+	padding-left:10px;
+	padding-right:10px;
+}
+td {
+	padding:5px 0;
+	outline:0;
+	border:0;
+	vertical-align:middle;
+	text-align:left;
+	-webkit-transition:background 300ms ease;
+	   -moz-transition:background 300ms ease;
+	    -ms-transition:background 300ms ease;
+	     -o-transition:background 300ms ease;
+	        transition:background 300ms ease;
+}
+td a{
+	display: block;
+}
+tr.parent a {
+	color:#9099A3;
+}
+.parent a:hover {
+	color:#2281d0;
+}
+
+.footer {
+	text-align:center;
+	font-size:.75em;
+}
+
+.line {
+	border-top: 3px solid #61666c;
+	margin:15px 0;
+}

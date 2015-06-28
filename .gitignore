@@ -2,10 +2,11 @@
 /cookbooks/
 /.vagrant
 Gemfile.lock
-/www
-!/www/log
-!/www/theme
+/www/*
+!/www/log/.gitkeep
+!/www/theme/
+!/www/theme/icons/
 !/www/.htaccess
-!/www/index.html
+!/www/index.php
 .ruby-gemset
 .ruby-version
