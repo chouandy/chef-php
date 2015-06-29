@@ -10,3 +10,6 @@ Gemfile.lock
 !/www/index.php
 .ruby-gemset
 .ruby-version
+/nodes/*
+!/nodes/.gitkeep
+!/nodes/10.10.10.10.json
