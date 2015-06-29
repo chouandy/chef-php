@@ -12,7 +12,7 @@ default['apache']['group']   = node[:server][:group]
 default['apache']['contact'] = 'chouandy625@gmail.com'
 
 # mysql config settings
-default[:mysql][:root_pass]  = 'vagrant'
+default[:mysql][:root_pass]  = 'root'
 default[:mysql][:host]       = '127.0.0.1'
 default[:mysql][:username]   = 'vagrant'
 default[:mysql][:password]   = 'vagrant'

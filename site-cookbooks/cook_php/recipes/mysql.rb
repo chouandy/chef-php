@@ -10,7 +10,6 @@ end
 
 # Configure the MySQL service.
 mysql_service 'default' do
-  bind_address '0.0.0.0'
   initial_root_password node[:mysql][:root_pass]
   action [:create, :start]
 end
